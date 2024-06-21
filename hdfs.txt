@@ -1,0 +1,49 @@
+/* Crear directorio para guardar los datasets */
+hdfs dfs -mkdir -p /user/hadoop/input
+
+/* Cargar dataset al HDFS */
+hdfs dfs -put /tmp/nombre_dataset.csv /user/hadoop/input/
+
+
+/* Atajos de las rutas de Pig */
+
+/* charlie */
+hdfs dfs -ls /user/hadoop/charlie-total_records
+hdfs dfs -cat /user/hadoop/charlie-total_records/part-r-00000
+hdfs dfs -ls /user/hadoop/charlie-branch_counts
+hdfs dfs -cat /user/hadoop/charlie-branch_counts/part-r-00000
+hdfs dfs -ls /user/hadoop/charlie-branch_taken_analysis
+hdfs dfs -cat /user/hadoop/charlie-branch_taken_analysis/part-r-00000
+hdfs dfs -ls /user/hadoop/charlie-branch_taken_ratio
+hdfs dfs -cat /user/hadoop/charlie-branch_taken_ratio/part-r-00000
+
+/* merced */
+hdfs dfs -ls /user/hadoop/merced-total_records
+hdfs dfs -cat /user/hadoop/merced-total_records/part-r-00000
+hdfs dfs -ls /user/hadoop/merced-branch_counts
+hdfs dfs -cat /user/hadoop/merced-branch_counts/part-r-00000
+hdfs dfs -ls /user/hadoop/merced-branch_taken_analysis
+hdfs dfs -cat /user/hadoop/merced-branch_taken_analysis/part-r-00000
+hdfs dfs -ls /user/hadoop/merced-branch_taken_ratio
+hdfs dfs -cat /user/hadoop/merced-branch_taken_ratio/part-r-00000
+
+/* whiskey */
+hdfs dfs -ls /user/hadoop/whiskey-total_records
+hdfs dfs -cat /user/hadoop/whiskey-total_records/part-r-00000
+hdfs dfs -ls /user/hadoop/whiskey-branch_counts
+hdfs dfs -cat /user/hadoop/whiskey-branch_counts/part-r-00000
+hdfs dfs -ls /user/hadoop/whiskey-branch_taken_analysis
+hdfs dfs -cat /user/hadoop/whiskey-branch_taken_analysis/part-r-00000
+hdfs dfs -ls /user/hadoop/whiskey-branch_taken_ratio
+hdfs dfs -cat /user/hadoop/whiskey-branch_taken_ratio/part-r-00000
+
+/* delta */
+hdfs dfs -ls /user/hadoop/delta-total_records
+hdfs dfs -cat /user/hadoop/delta-total_records/part-r-00000
+hdfs dfs -ls /user/hadoop/delta-branch_counts
+hdfs dfs -cat /user/hadoop/delta-branch_counts/part-r-00000
+hdfs dfs -ls /user/hadoop/delta-branch_taken_analysis
+hdfs dfs -cat /user/hadoop/delta-branch_taken_analysis/part-r-00000
+hdfs dfs -ls /user/hadoop/delta-branch_taken_ratio
+hdfs dfs -cat /user/hadoop/delta-branch_taken_ratio/part-r-00000
+

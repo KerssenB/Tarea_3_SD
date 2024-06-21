@@ -1,0 +1,11 @@
+version: '3'
+services:
+  hadoop-spark-pig-hive:
+    build: .
+    ports:
+      - "50070:50070"
+      - "8088:8088"
+      - "8080:8080"
+
+# Si el contenedor se cierra solo, utilizar esta misma imagen para crear un contenedor it.
+# docker run -it -p 50070:50070 -p 8088:8088 -p 8080:8080 --name nombre_contenedor -d codigo_imagen
